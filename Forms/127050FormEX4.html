@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Form Exercise</title>
+
+        <style>
+            body {
+                text-align: center;
+                background-color: #4c484f;
+            }
+            
+            label {
+                margin-left: 5px;
+            }
+
+            fieldset {
+                margin: 10px;
+                padding: 10px;
+                display:inline-block;
+                border-radius: 10px;
+            }
+            
+            .d {
+                display: flex;
+                align-items: center;
+            }
+            
+            textarea {
+                padding: 5px;
+                border-radius: 5px;
+                margin-left: 5px;
+            }
+
+            input {
+                border-radius: 5px;
+            }
+            
+            .sub {
+                padding: 50px;
+                border-radius: 30px;
+                font-size: 20pt;
+                color: white;
+                background-color: green;
+            }
+
+            .res {
+                padding: 20px;
+                border-radius: 50px;
+                font-size: 15pt;
+                color: white;
+                background-color: red;
+            }
+        </style>
+    </head>
+
+    <body> 
+        <h1>Computer Science Survey</h1>
+
+        <form action="submitted.html">
+            <fieldset>
+                <legend>Survey of Computer Science Knowledge</legend>
+                    <label>First Name:</label>
+                    <input type="text" id="fname" required autofocus>
+                    <label>Last Name:</label>
+                    <input type="text" id="lname" required>
+                    <br><br>
+
+                    <label>Select Your Age Group:</label>
+                    <input type="radio" value="<13" name="rad">
+                    <label for="<13"><13</label>
+
+                    <input type="radio" value="13-15" name="rad">
+                    <label for="13-15">13-15</label>
+
+                    <input type="radio" value="16-18" name="rad">
+                    <label for="16-18">16-18</label>
+
+                    <input type="radio" value="19+" name="rad">
+                    <label for="19+">19+</label>   
+                    <br><br>
+                    
+                    <div class="d">
+                        <label>Explain briefly your previous computer science experience:</label>
+                        <textarea rows="4" cols="15"></textarea> 
+                    </div>   
+            </fieldset>
+                
+            <div>
+                <label>Choose your favorite computer science genre:</label>
+                <select required>
+                    <option>Data Structures and Algorithms</option>
+                    <option>Web Development</option>
+                    <option>Data Science</option>
+                    <option>Cybersecurity</option>
+                </select>
+            </div>
+
+            <br>
+                <label>Any other information that I need to know about your computer science career/aspirations?</label>
+            <br><br>
+                <textarea rows="5" cols="50"></textarea>
+            <br><br
+
+            <label>Date:</label>
+            <input type="date" required>
+            <label>Are you absolutely sure?</label>
+            <select required>
+                <option>Yes</option>
+                <option>Yes</option>
+                <option>Yes</option>
+                <option>Yes</option>
+                <option>Yes</option>
+                <option>Yes</option>
+                <option>No</option>
+            </select>
+
+            <br><br><br>
+            <input type="submit" class="sub" href="submitted.html">
+            <br><br>
+
+            <input type="reset" class="res">
+        </form>
+    </body>
+</html>

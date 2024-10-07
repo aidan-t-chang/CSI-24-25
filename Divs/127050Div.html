@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+    <!--Linked List image credit: freecodecamp.org
+    https://www.freecodecamp.org/news/content/images/2023/05/18-1.png
+    Standalone image creidt: linkedin.com
+    https://media.licdn.com/dms/image/D5612AQH8jMfv_rycMQ/article-cover_image-shrink_600_2000/0/1695766815524?e=2147483647&v=beta&t=ZlCQonLrRY80dkSzrbsJ7FUxB67O87ygVu9p_6lTnsE
+    Coding image credit: cloudinary.com
+    https://res.cloudinary.com/practicaldev/image/fetch/s--S_XLvaPf--/c_imagga_scale,f_auto,fl_progressive,h_720,q_auto,w_1280/https://thepracticaldev.s3.amazonaws.com/i/pwj5nwuqf5lgpsxb0eao.png
+
+    -->
+    <head>
+        <title>Linked Lists</title>
+        <link rel="stylesheet" href="127050style.css">
+    </head>
+
+    <body>
+        <div id="container" class="overimage">
+            <div class="contentheader">
+                Understanding Linked Lists (in Python)
+            </div> 
+            <br>
+
+            <div class="contentheader" style="font-size:20px;">
+                <nav>
+                    <a href="#intro">Introduction</a> |
+                    <a href="#why">Why Linked List?</a> |
+                    <a href="#looks">How?</a>
+                </nav>
+            </div>
+            <br>
+            
+            <div class="content" id="intro">
+                <h4>Introduction</h4>
+
+                <img href="https://www.geeksforgeeks.org/linked-list-data-structure/" 
+                src="https://www.freecodecamp.org/news/content/images/2023/05/18-1.png"
+                width="40%"
+                height="40%"
+                style="float:left;">
+
+                <p>Linked Lists are a fundamental data structure present in almost every
+                programming language. Each linked list contains a value and a pointer
+                towards the next node. The term "linked" comes from the fact that the 
+                values within the list are linked to each other, meaning it is a little
+                harder to insert and remove elements, since all the values are connected
+                to each other in a predetermined way. Linked lists were first used around
+                the 1950s and ever since, they have been a key stepping stone to fundamentally
+                understanding all data structures and algorithms.
+                </p>
+            </div>
+            <br>
+
+            <div style="text-align:center;">
+                <a href="https://www.linkedin.com/pulse/understanding-linked-lists-operations-applications-adjanohoun">
+                    <img src="https://media.licdn.com/dms/image/D5612AQH8jMfv_rycMQ/article-cover_image-shrink_600_2000/0/1695766815524?e=2147483647&v=beta&t=ZlCQonLrRY80dkSzrbsJ7FUxB67O87ygVu9p_6lTnsE"
+                    width="40%"
+                    height="40%">
+                </a>
+            </div>
+            <br>
+
+            <div class="content" id="why">
+                <h4>Why Linked Lists?</h4>
+
+                <p>Why choose a linked list instead of a regular list? Great question. While 
+                    the strict methods of the linked list may seem detrimental, they are there
+                    for a reason. While programming the insertion and deletion for linked lists may
+                    seem unnecessarily hard, it allows for much faster time complexities for insertion and deletion.
+                    Linked lists are also good for dynamic programming situations, where the data structure's size
+                    must constantly change. Overall, linked lists are a powerful data structure that are used
+                    as the building block to many other data structures due to their efficiency compared to a regular
+                    unsorted, unorganized array.
+                </p>
+            </div>
+            <br>
+
+            <div class="content" id="looks">
+                <h4>How does a linked list work?</h4>
+
+                <p>A linked list first starts at the definition of the node:</p>
+                <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--S_XLvaPf--/c_imagga_scale,f_auto,fl_progressive,h_720,q_auto,w_1280/https://thepracticaldev.s3.amazonaws.com/i/pwj5nwuqf5lgpsxb0eao.png"
+                width="40%"
+                height="40%">
+                <p>Value gives each node a value, and next_node is what allows nodes to connect to each other.</p>
+
+                <h4>How do we connect nodes to teach other to make a linked list?</h4>
+                <p>Connecting nodes to each other is as easy as setting the next values. Setting the next values will
+                    allow us to create an actual linked list, being able to traverse through the nodes using the 
+                    ".next_node" attribute.
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

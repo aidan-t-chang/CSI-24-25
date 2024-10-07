@@ -1,0 +1,133 @@
+body {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    background-image: url('https://i.imgur.com/Cl3QR3a.gif');
+    background-size: cover;
+    cursor: url("https://web.archive.org/web/20091027011422/http://ar.geocities.com/la_cuchilla2003/images/cursor_lfc.gif"), auto;
+}
+
+marquee {
+    background-color: #064699;
+    font-size: 25px;
+    color: #0856a8;
+}
+
+img {
+    float: left;
+    position: relative;
+    top: 40px;
+    left: 400px;
+    cursor: url('https://web.archive.org/web/20091026130159/http://geocities.com/lauriel_5/CursorArrow.gif'), auto;
+}
+
+input:hover {
+    cursor: url("https://web.archive.org/web/20091027011422/http://ar.geocities.com/la_cuchilla2003/images/cursor_lfc.gif"), auto;
+}
+
+.offcenterleft {
+    text-align: center;
+    margin-right: 45px;
+}
+
+textarea:hover {
+    cursor: url('https://web.archive.org/web/20091026130159/http://geocities.com/lauriel_5/CursorArrow.gif'), auto;
+}
+
+.bottomright {
+    position: relative;
+}
+
+/* saving for future project, might be useful */
+#shadowBox {
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.2);
+    /* Black w/opacity/see-through */
+    border: 3px solid;
+}
+
+.rainbow {
+    text-align: center;
+    text-decoration: underline;
+    font-family: monospace;
+    letter-spacing: 5px;
+}
+
+.rainbow_text_animated {
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 3s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
+
+.blink
+
+{
+
+    animation:.7s blinker linear infinite;
+
+    -webkit-animation:.7s blinker linear infinite;
+
+    -moz-animation:.7s blinker linear infinite;
+
+}
+
+.offcenterslightly {
+    text-align: center;
+    margin-left: 50px;
+}
+
+.intherainbow {
+    margin-right: 200px;
+    font-size: 30px;
+}
+
+@-moz-keyframes blinker
+
+{  
+
+    0% { opacity: 1.0; }
+
+    50% { opacity: 0.0; }
+
+    100% { opacity: 1.0; }
+
+}
+
+
+@-webkit-keyframes blinker
+
+{  
+
+    0% { opacity: 1.0; }
+
+    50% { opacity: 0.0; }
+
+    100% { opacity: 1.0; }
+
+}
+
+
+@keyframes blinker
+
+{  
+
+    0% { opacity: 1.0; }
+
+    50% { opacity: 0.0; }
+
+    100% { opacity: 1.0; }
+
+ }
+

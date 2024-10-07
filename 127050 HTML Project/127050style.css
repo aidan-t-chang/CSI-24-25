@@ -1,0 +1,101 @@
+body {
+    text-align: center;
+    background-color: #1b19ac5b;
+}
+
+.icon {
+    width: 10%;
+}
+
+.container {
+    width:  40%;
+    margin: auto;
+}
+
+/* create aesthetically pleasing divs for about me and course plan pages */
+.c2 {
+    width:  60%;
+    margin: auto;
+    background-color: rgba(255, 0, 0, 0.4);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.c3 {
+    width:  60%;
+    margin: auto;
+    background-color: rgba(195, 0, 255, 0.4);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* navbar class, to turn the list into an actual navbar */
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.li2 {
+    float:left;
+}
+  
+.li2 a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.li2 a:hover {
+    background-color: #3e3939;
+}
+
+.d {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 20%;
+}
+            
+textarea {
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+/* make the submit button a little larger and more pronounced for the visitor */
+.submit {
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.what {
+    width: 20%;
+    margin: auto;
+    border-style: dotted;
+}
+
+.floa {
+    float: left;
+    padding: 5px;
+}
+
+a:hover {
+    color: blue;
+}
+
+.bigger {
+    font-size: 20px;
+    padding: 10px;
+}
+
+td {
+    border-style:dashed;
+    padding: 5px;
+}

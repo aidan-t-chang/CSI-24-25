@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+    <title>
+        Binary Search
+    </title>
+
+    <!-- Citations/Sources:
+    leftmost image: big-o complexity chart
+    https://miro.medium.com/v2/resize:fit:1400/1*5ZLci3SuR0zM_QlZOADv8Q.jpeg
+    middle image within text: GeeksforGeeks binary search representation
+    https://media.geeksforgeeks.org/wp-content/uploads/20230711134722/Binary-Search.png
+    rightmost image: freecodecamp image of binary search pointer representation
+    https://www.freecodecamp.org/news/content/images/2023/03/binary-search-algorithm.png
+    -->
+    <style>
+        .left {
+            float: left;
+        }
+
+        body {
+            background-color: #615b53;
+        }
+
+        img {
+            border: 3px solid #3e3838;
+            margin: 5px;
+        }
+
+        p {
+            text-align: justify;
+            margin: 5px;
+        }
+
+        a {
+            white-space: nowrap;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .left2 {
+            float: left;
+            width: 33%;
+        }
+    </style>
+
+    <body>
+        <h1 align="center">The Binary Search Algorithm</h1>
+        <h2 align="center">I love Binary Search</h2>
+
+        <div>
+            <div class="left2">
+                <img src="https://miro.medium.com/v2/resize:fit:1400/1*5ZLci3SuR0zM_QlZOADv8Q.jpeg"
+                width = "94%"
+                height = "94%"> <!--may have cheesed it a little bit here...-->
+            </div>
+            <div class="left2"                    
+            style="border: 1px solid black"> <!-- div of the image and text wrapped around the image-->
+                <a href="https://algo.monster/problems/binary_search_intro">
+                    <img class="left" src="https://media.geeksforgeeks.org/wp-content/uploads/20230711134722/Binary-Search.png"
+                    width = "40%"
+                    height = "40%">
+                </a>
+                <p>
+                    The Binary Search algorithm is a common search algorithm due to 
+                    its relative simplicity to implement and fast time complexity. 
+                    It works by constantly splitting the search array into two each
+                    time you cannot find the element, quite literally halving the
+                    possible search elements each time. This leads the algorithm to
+                    have a O(logn) <a href="https://www.geeksforgeeks.org/time-complexity-and-space-complexity/">time complexity</a>, which is substantially better
+                    than O(n) and will work better on large data sets. The only
+                    bottleneck about the algorithm is the fact that the array must be
+                    sorted first before performing the search algorithm. This is due
+                    to the fact that the algorithm relies on a "upper/lower" method,
+                    in which we check if the target number is equal to, 
+                    higher, or lower than the current number (set in the middle each iteration) we are at. This is how
+                    it is possible to split the array in two each time; either we have
+                    found the element, or we know that all the numbers on one side of 
+                    the array cannot be the element no matter what. Learn more by
+                    clicking <a href="https://algo.monster/problems/binary_search_intro">this link.</a>
+                    To learn more about data stuctures and algorithms, 
+                    <a href="https://algo.monster/">Algomonster</a> is a good website.
+                </p>
+            </div>
+            <div class="left2" style="margin-left: 10px;">
+                <img src="https://www.freecodecamp.org/news/content/images/2023/03/binary-search-algorithm.png"
+                width = "95%"
+                height = "95%">
+            </div>
+            <br style="clear: left;" />
+        </div>
+    </body>
+</html>
