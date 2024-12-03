@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ pet.name }}'s Virtual Pet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #333;
+        }
+        .status {
+            margin: 20px;
+            font-size: 18px;
+        }
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        .wrap {
+            width: 70%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to {{ pet.name }}'s Virtual Pet!</h1>
+    
+    <div class="status">
+        <p><strong>Happiness Level:</strong> {{ pet.happiness }} / 10</p>
+        <p><strong>Hunger Level:</strong> {{ pet.hunger }} / 10</p>
+        <p><strong>Bored Level:</strong> {{ pet.bored }} / 10</p>
+        <p><strong>Skill Level:</strong> {{ pet.skill }}</p>
+        <p><strong>IQ:</strong> {{ pet.iq }}</p>
+    </div>
+
+    <div class="wrap">
+        <a href="{{ url_for('feed') }}"><button class="button">Feed {{ pet.name }}</button></a>
+        <a href="{{ url_for('play') }}"><button class="button">Play with {{ pet.name }}</button></a>
+        <a href="{{ url_for('teach') }}"><button class="button">Train {{ pet.name }}</button></a>
+        <a href="{{ url_for('change') }}"><button class="button">Play With Another Dog</button></a>
+        <a href="{{ url_for('walk') }}"><button class="button">Take {{ pet.name }} On a Walk</button></a>
+        <a href="{{ url_for('calculus') }}"><button class="button">Teach {{ pet.name }} Calculus</button></a> 
+        <a href="{{ url_for('tv') }}"><button class="button">Watch TV With {{ pet.name }}</button></a>        
+    </div>
+
+
+</body>
+</html>
