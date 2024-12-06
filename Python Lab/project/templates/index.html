@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Find Your Career</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <h1>Welcome to the Find Your Career Quiz!</h1>
+        <form action="/" method="POST">
+            {% for question in questions %}
+            {% set idx = loop.index0 %}
+            <div class="question">
+                <p class="qq">{{ question['question'] }}</p>
+                {% for option in question['options'] %}
+                <label>
+                    <input type="radio" name="question{{ idx }}" value="{{ option }}" required> {{ option }}
+                </label><br>
+                {% endfor %}
+            </div>
+            {% endfor %}
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>
+
